@@ -1,7 +1,7 @@
 services:
   - docker
 script:
-  - docker image build -t \12shubham1\travistest .
+  - docker image build -t 12shubham1\travistest .
 deploy:
   provider: script
   script: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD && docker push 12shuhbam1/travistest
